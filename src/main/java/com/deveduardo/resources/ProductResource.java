@@ -13,7 +13,7 @@ import com.deveduardo.entities.Product;
 import com.deveduardo.services.ProductService;
 
 @RestController
-@RequestMapping(value = "/producties")
+@RequestMapping(value = "/products")
 public class ProductResource {
 
 	@Autowired
