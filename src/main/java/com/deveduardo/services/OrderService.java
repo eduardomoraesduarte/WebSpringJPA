@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.deveduardo.entities.Order;
+import com.deveduardo.entities.User;
 import com.deveduardo.repositories.OrderRepository;
 
 @Service
@@ -23,4 +24,6 @@ public class OrderService {
 		Optional<Order> obj = repository.findById(id);
 		return obj.get();
 	}
+	
+
 }
