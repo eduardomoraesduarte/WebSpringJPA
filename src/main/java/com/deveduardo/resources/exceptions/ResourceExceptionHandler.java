@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import com.deveduardo.services.exceptions.DatabaseException;
 import com.deveduardo.services.exceptions.ResourceNotFoundException;
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
@@ -36,4 +37,6 @@ public class ResourceExceptionHandler implements Serializable {
 				request.getRequestURI());
 		return ResponseEntity.status(status).body(err);
 	}
+	
+	
 }
